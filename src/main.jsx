@@ -4,9 +4,10 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Context from "./utils/Context.jsx";
 import { ToastContainer } from 'react-toastify';
+
 createRoot(document.getElementById("root")).render(
   <Context>
-    <BrowserRouter>
+    <BrowserRouter basename="/SmartMart">
       <App />
       <ToastContainer />
     </BrowserRouter>
